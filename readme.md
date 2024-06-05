@@ -83,6 +83,22 @@ stlink
 $ st-flash write "Название файла прошивки".bin 0x8000000
 ```
 
+### Отладка
+1. Необходимо запустить утилиту st-util из пакеты stlink.
+2. Далее запустить arm-none-eabi-gdb "Название файла".axf.
+3. Ввести команду tar extended-remote :4242 для подключения к микроконтроллеру.
+
+Команды gdb для отладки:
+   load
+   next
+   step
+   run
+   finish
+   break
+   clear
+   info registers
+   x/fx адрес
+
 # Источники
 
 Статья на хабре "Пишем свою простейшую программу для ARM Cortex-M3"
