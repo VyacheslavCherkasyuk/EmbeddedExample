@@ -76,7 +76,7 @@ $ make list
 ```shell
 $ qemu-system-arm -M lm3s811evb -kernel "Название файла".elf -nographic
 ```
-### Залить прошивку
+### Залить прошивку с помощью stlink
 stlink
 
 ```shell
